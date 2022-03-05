@@ -1,5 +1,12 @@
 # Why-does-base-appear-in-front-of-my-terminal-prompt-
 
+
+To open anaconda-navigator from terminal type : 
+   
+     source /home/hirak/anaconda3/bin/activate
+     
+     
+
 Two ways to set activate/Deactivate Base Environment in Ubuntu terminal
 
 1.
