@@ -1,3 +1,4 @@
+
 # Why-does-base-appear-in-front-of-my-terminal-prompt-
 
 
@@ -46,6 +47,35 @@ To reactivate set it to True
      
      conda init --reverse
 
+
+
+The best and easy way to install anaconda on Ubuntu for GUI Version
+
+The steps are as follows:
+  1. Download anaconda from https://www.anaconda.com/
+  2. Open the terminal from the folder where anaconda is downloaded
+  3. Type: $bash anaconda_file_name.sh
+  4. Follow the instructions as stated in the terminal.
+  5. Close the terminal and open a new terminal window
+  6. If (base) is not shown in terminal:
+      a.  Type in terminal $ nano ~.bashrc
+      b.  Paste the following in the end of file:
+                export PATH="/home/user_name/anaconda3/bin:$PATH"
+  7. Open a text editor and save it as anaconda.desktop on the desktop.
+  8. Paste the following into the editor
+
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Anaconda
+Version=2.0
+Type=Application
+Exec=/home/user_name/anaconda3/bin/anaconda-navigator
+Icon=/home/user_name/anaconda3/lib/python3.8/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Comment=Open Anaconda Navigator
+Terminal=false 
+
+  9. Save and close the file.
+10. Go to desktop, right click on anaconda.desktop and click on "Allow Launching"
 
 
   
